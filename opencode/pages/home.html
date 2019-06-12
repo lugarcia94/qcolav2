@@ -7,9 +7,9 @@
 {% set showAvailable = settings.show_available_products ? 'available' %}
 
 {% set products = Products({
-    'filter': 'featured',
+    'filter': showAvailable,
     'limit': limitProducts,
-    'categories': 135,
+    'categories': [135],
     'order': {'price': 'asc'}
 }) %}   
 {% element 'showcase' {
