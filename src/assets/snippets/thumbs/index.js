@@ -64,7 +64,7 @@ if( typeof $ == 'function') {
 
     function  createThumb(src,index) {
         if (src) {
-            return  `<li class="thumbs__item"><a class="thumbs__link" data-index="${index}" href="#${index}"><img class="thumbs__image" src="${src}" /></a></li>`;
+            return  `<li class="thumbs__item"><a class="thumbs__link" data-index="${index}" href="#${index}"><amp-img class="thumbs__image" src="${src}" /></a></li>`;
         }else{
             return `<li class="thumbs__item"><a class="thumbs__link" data-index="${index}" href="#${index}"><span class="thumb__video"></span></a></li>`;
         }

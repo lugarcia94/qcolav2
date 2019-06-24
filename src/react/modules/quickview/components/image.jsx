@@ -11,12 +11,12 @@ export default class Image extends Component {
 
         return <React.Fragment>
             { images.length ? <div>
-                <img src={ images[index].http.replace('http:', '') } />  
+                <amp-img src={ images[index].http.replace('http:', '') } />  
             </div> : <div>
                 
             </div> }
 
-            <div>{ images.map((image, i) => <div onClick={ () => this.setState({ index: i }) } key={ i }><img src={ image.http.replace('http:', '') } /></div>) }</div>
+            <div>{ images.map((image, i) => <div onClick={ () => this.setState({ index: i }) } key={ i }><amp-img src={ image.http.replace('http:', '') } /></div>) }</div>
         </React.Fragment>;
     }
 }

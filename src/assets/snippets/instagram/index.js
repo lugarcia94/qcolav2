@@ -16,7 +16,7 @@ if(elementInstaFeed) {
             resolution: 'standard_resolution',
             template: `
             <div class="instagram__item">
-                <a href="{{link}}" class="instagram__link"><img src="{{image}}"></a>
+                <a href="{{link}}" class="instagram__link"><amp-img src="{{image}}"></a>
             </div>
             `,
             after: () => addCarouselInstagram()

@@ -13,9 +13,9 @@
                     <a href="{{ child.link }}" class="filter-home__link">
                         <span class="filter-home__image">
                             {% if child.images %}
-                            <img src="{{ child.images[0] }}" alt="{{ child.name }}">
+                            <amp-img src="{{ child.images[0] }}" alt="{{ child.name }}">
                             {% else %}
-                            <img src="https://fakeimg.pl/110x110/" alt="{{ child.name }}">
+                            <amp-img src="https://fakeimg.pl/110x110/" alt="{{ child.name }}">
                             {% endif %}
                         </span>
                         <span class="filter-home__label">{{ child.name }}</span>

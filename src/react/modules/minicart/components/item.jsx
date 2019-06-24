@@ -30,8 +30,8 @@ export default class Item extends Component {
         return <ItemContainer>
             <ItemImage>
                 { typeof image !== 'undefined'
-                    ? <img  src={ image } alt={ product_name } title={ product_name } /> 
-                    : <img  src={ `${ tray.settings }img/no-image.svg` } alt={ product_name } title={ product_name } /> }
+                    ? <amp-img  src={ image } alt={ product_name } title={ product_name } /> 
+                    : <amp-img  src={ `${ tray.settings }img/no-image.svg` } alt={ product_name } title={ product_name } /> }
             </ItemImage>
             <ItemContent>
                 <ItemName href={ product_url.http.replace('http:', '') } dangerouslySetInnerHTML={{__html: product_name}}></ItemName> 
@@ -46,3 +46,4 @@ export default class Item extends Component {
         </ItemContainer>;
     }
 }
+

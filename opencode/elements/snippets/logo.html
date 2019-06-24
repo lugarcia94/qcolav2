@@ -1,7 +1,7 @@
 <div class="logo">
     {% if settings.logo %}
     <a class="logo__link" href="{{ links.home }}" data-tray-tst="logotipo_loja" title="{{ store.name }}">
-        <img class="logo__img" src="{{ settings.logo }}" alt="{{ store.name }}" title="{{ store.name }}">
+        <amp-img class="logo__img" src="{{ settings.logo }}" alt="{{ store.name }}" title="{{ store.name }}">
     </a>
     {% else %}
     <a class="logo__link" href="{{ links.home }}" data-tray-tst="logotipo_loja" title="{{ store.name }}">
